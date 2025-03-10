@@ -23,6 +23,7 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.splitbelow = true -- new horizontal split goes below
 vim.opt.autoread = true   -- auto update files for git
+vim.opt.smoothscroll = true
 
 
 -- auto :only on focused vim window when splitting desktop window

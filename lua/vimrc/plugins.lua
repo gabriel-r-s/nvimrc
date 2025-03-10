@@ -92,21 +92,20 @@ require("lualine").setup({
         icons_enabled = false,
     },
     sections = {
-        lualine_a = { "mode" },
-        lualine_b = { "branch", pretty_cwd },
-        -- lualine_c = { "filename", "diff", "diagnostics" },
-        lualine_c = { "filename" },
+        lualine_a = { "filename" },
+        lualine_b = { "mode" },
+        lualine_c = { "branch" },
         lualine_x = { "filetype" },
         lualine_y = {},
-        lualine_z = { location_slash },
+        lualine_z = { "diff", "diagnostics" },
     },
     inactive_sections = {
-        lualine_a = { "" },
-        lualine_b = { "" },
+        lualine_a = {},
+        lualine_b = {},
         lualine_c = { "filename" },
         lualine_x = { "filetype" },
         lualine_y = {},
-        lualine_z = { location_slash },
+        lualine_z = { "diff", "diagnostics" },
     },
 })
 vim.opt.showmode = false
